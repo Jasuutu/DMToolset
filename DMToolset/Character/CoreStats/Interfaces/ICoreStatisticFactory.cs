@@ -2,6 +2,6 @@
 {
     public interface ICoreStatisticFactory
     {
-        ICoreStatistic GenerateCoreStatistic(CoreStatisticType statisticType, int statisticValue);
+        ICoreStatistic GenerateCoreStatistic<T>(int statisticValue) where T : ICoreStatistic;
     }
 }

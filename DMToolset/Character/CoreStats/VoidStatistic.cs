@@ -4,6 +4,11 @@ namespace DMToolset.Character.CoreStats
 {
     public class VoidStatistic: ICoreStatistic
     {
+        public VoidStatistic(int statisticValue)
+        {
+
+        }
+
         public int GetModifier()
         {
             return 0;
@@ -11,7 +16,7 @@ namespace DMToolset.Character.CoreStats
 
         public ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount)
         {
-            return new VoidStatistic();
+            return new VoidStatistic(0);
         }
     }
 }

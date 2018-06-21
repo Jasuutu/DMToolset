@@ -2,9 +2,9 @@
 {
     public class CoreStatistic
     {
-        internal readonly int _score;
+        private readonly int _score;
 
-        public CoreStatistic(int score)
+        protected CoreStatistic(int score)
         {
             this._score = score;
         }

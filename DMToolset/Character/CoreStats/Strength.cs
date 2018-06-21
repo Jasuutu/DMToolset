@@ -2,16 +2,16 @@
 
 namespace DMToolset.Character.CoreStats
 {
-    public class Stength: CoreStatistic, ICoreStatistic
+    public class Strength: CoreStatistic, ICoreStatistic
     {
-        public Stength(int score)
+        public Strength(int score)
             : base(score)
         {
         }
 
         public ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount)
         {
-            return new Stength(CalculateNewScore(modifierAmount));
+            return new Strength(CalculateNewScore(modifierAmount));
         }
     }
 }

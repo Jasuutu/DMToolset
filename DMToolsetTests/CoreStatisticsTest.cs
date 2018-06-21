@@ -20,7 +20,7 @@ namespace DMToolsetTests
         [Test]
         public void GenerateCoreStatisticTest()
         {
-            ICoreStatistic strengeth = coreStatisticFactory.GenerateCoreStatistic(CoreStatisticType.Strength, 8);
+            ICoreStatistic strengeth = coreStatisticFactory.GenerateCoreStatistic<Strength>(8);
 
             strengeth.GetModifier().Should().Be(-1, "because this is a base value");
         }
@@ -28,7 +28,7 @@ namespace DMToolsetTests
         [Test]
         public void ModifyCoreStatisticTest()
         {
-            ICoreStatistic dexterity = coreStatisticFactory.GenerateCoreStatistic(CoreStatisticType.Dexterity, 8);
+            ICoreStatistic dexterity = coreStatisticFactory.GenerateCoreStatistic<Dexterity>(8);
             ICoreStatistic newDexterity = dexterity.ModifyCoreStatistic(dexterity, 2);
 
             newDexterity.GetModifier().Should().Be(0, "because the modifiec stat was increased by 2");
@@ -37,14 +37,14 @@ namespace DMToolsetTests
         [Test]
         public void CheckVoidStatistic()
         {
-            coreStatisticFactory.GenerateCoreStatistic(CoreStatisticType.None, 10).Should()
+            coreStatisticFactory.GenerateCoreStatistic<VoidStatistic>(10).Should()
                 .NotBeNull("because we don't want to have a null value type");
         }
 
         [Test]
         public void CheckVoidStatisticReturn()
         {
-            coreStatisticFactory.GenerateCoreStatistic(CoreStatisticType.None, 10).GetModifier().Should()
+            coreStatisticFactory.GenerateCoreStatistic<VoidStatistic>(10).GetModifier().Should()
                 .Be(0, "because the only valid return for the null type should be 0");
         }
     }
