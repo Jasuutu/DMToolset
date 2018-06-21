@@ -9,7 +9,7 @@
             this._score = score;
         }
 
-        public int GetUnmodifedModifier()
+        public int GetModifier()
         {
             return CalculateModifier();
         }
@@ -21,7 +21,7 @@
 
         private int CalculateModifier()
         {
-            return _score / 2;
+            return _score / 2 - 5;
         }
     }
 }

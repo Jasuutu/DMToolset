@@ -2,7 +2,7 @@
 {
     public interface ICoreStatistic
     {
-        int GetUnmodifedModifier();
+        int GetModifier();
 
         ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount);
     }

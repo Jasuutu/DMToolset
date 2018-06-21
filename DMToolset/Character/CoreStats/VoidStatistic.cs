@@ -4,11 +4,7 @@ namespace DMToolset.Character.CoreStats
 {
     public class VoidStatistic: ICoreStatistic
     {
-        public VoidStatistic()
-        {
-        }
-
-        public int GetUnmodifedModifier()
+        public int GetModifier()
         {
             return 0;
         }
