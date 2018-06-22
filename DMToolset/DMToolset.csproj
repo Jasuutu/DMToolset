@@ -45,11 +45,12 @@
     <Compile Include="Character\CoreStats\Constitution.cs" />
     <Compile Include="Character\CoreStats\CoreStatisitcFactory.cs" />
     <Compile Include="Character\CoreStats\CoreStatistic.cs" />
+    <Compile Include="Character\CoreStats\CoreStatisticsHandler.cs" />
     <Compile Include="Character\CoreStats\Dexterity.cs" />
     <Compile Include="Character\CoreStats\Interfaces\ICoreStatistic.cs" />
     <Compile Include="Character\CoreStats\Intelligence.cs" />
     <Compile Include="Character\CoreStats\Interfaces\ICoreStatisticFactory.cs" />
-    <Compile Include="Character\CoreStats\Stength.cs" />
+    <Compile Include="Character\CoreStats\Strength.cs" />
     <Compile Include="Character\CoreStats\VoidStatistic.cs" />
     <Compile Include="Character\CoreStats\Wisdom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

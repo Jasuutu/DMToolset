@@ -29,7 +29,7 @@ namespace DMToolsetTests
         public void ModifyCoreStatisticTest()
         {
             ICoreStatistic dexterity = coreStatisticFactory.GenerateCoreStatistic<Dexterity>(8);
-            ICoreStatistic newDexterity = dexterity.ModifyCoreStatistic(dexterity, 2);
+            ICoreStatistic newDexterity = dexterity.ModifyCoreStatistic(2);
 
             newDexterity.GetModifier().Should().Be(0, "because the modifiec stat was increased by 2");
         }

@@ -14,7 +14,7 @@ namespace DMToolset.Character.CoreStats
             return 0;
         }
 
-        public ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount)
+        public ICoreStatistic ModifyCoreStatistic(int modifierAmount)
         {
             return new VoidStatistic(0);
         }

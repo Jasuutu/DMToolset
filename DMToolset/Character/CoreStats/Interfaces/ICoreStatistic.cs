@@ -4,6 +4,6 @@
     {
         int GetModifier();
 
-        ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount);
+        ICoreStatistic ModifyCoreStatistic(int modifierAmount);
     }
 }

@@ -9,7 +9,7 @@ namespace DMToolset.Character.CoreStats
         {
         }
 
-        public ICoreStatistic ModifyCoreStatistic(ICoreStatistic stat, int modifierAmount)
+        public ICoreStatistic ModifyCoreStatistic(int modifierAmount)
         {
             return new Strength(CalculateNewScore(modifierAmount));
         }
